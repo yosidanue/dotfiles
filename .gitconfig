@@ -1,0 +1,14 @@
+[core]
+	editor = code  --wait
+	pager = LESSCHARSET=utf-8 less
+	autoCRLF = false
+[user]
+	name = yosidanue
+	email = yosidanue@gmail.com
+[credential]
+	helper = manager
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
